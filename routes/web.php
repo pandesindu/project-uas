@@ -27,7 +27,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', Beranda::class)->name('beranda');
 
-Route::group(['middleware'=>['auth:sanctum', 'verified']], function(){
+Route::group(['middleware'=>['auth:sanctum', 'verified', 'ceklevel']], function(){
  
     Route::get('/dashboard', function () {
         return view('admin.beranda');
@@ -39,21 +39,5 @@ Route::group(['middleware'=>['auth:sanctum', 'verified']], function(){
     Route::get('/type', TypeIndex::class)->name('type');
     Route::get('/penjualan', PenjualanIndex::class)->name('penjualan');
     Route::get('/rekanan', BankIndex::class)->name('rekanan');
-    Route::get('/produk', Beranda::class)->name('beranda');
+    Route::get('/produk', Beranda::class)->name('produk');
 });
-
-
-// Route::group(['middleware'=>['auth', 'ceklevel:1']], function(){
-
-//     Route::get('/dashboard', function () {
-//         return view('admin.beranda');
-//     })->name('dashboard');
-
-//     Route::get('motors', Motors::class)->name('motors');
-//     Route::get('/pembelian', PembelianIndex::class)->name('pembelian');
-//     Route::get('/merk', MerkIndex::class)->name('merk');
-//     Route::get('/type', TypeIndex::class)->name('type');
-//     Route::get('/penjualan', PenjualanIndex::class)->name('penjualan');
-//     Route::get('/rekanan', BankIndex::class)->name('rekanan');
-//     Route::get('/produk', Beranda::class)->name('beranda');
-// });
