@@ -11,4 +11,13 @@ class Penjualan extends Model
     protected $fillable = [
         'nik_pembeli',  'nama_pembeli','alamat_pembeli', 'jk_pembeli', 'no_pembeli','motor_id','transaksi', 'pembayaran', 'uang_muka', 'bank'
     ];
+
+    public function motor(){
+        return $this->hasMany(motor::class);
+      }
+
+      public function bank(){
+        return $this->belongsTo(Bank::class);
+      }
+
 }

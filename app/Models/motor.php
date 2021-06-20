@@ -15,6 +15,25 @@ class motor extends Model
 
 
     public function pembelian(){
-        return $this->BelongsTo(Pembelian::class, 'motor_id');
+        return $this->BelongsTo(Pembelian::class);
       }
+
+      
+      public function penjualan()
+      {
+        return $this->belongsTo(Penjualan::class);  
+      }
+
+
+      public function merk()
+      {
+        return $this->belongsTo(Merk::class);  
+      }
+
+      public function type()
+      {
+        return $this->belongsTo(Type::class);  
+      }
+
+
 }

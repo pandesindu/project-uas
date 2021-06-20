@@ -12,5 +12,8 @@ class Type extends Model
         'nama_type', 'merk_id'
     ];
 
+    public function merk(){
+        return $this->belongsTo(Merk::class);
+      }
 
 }

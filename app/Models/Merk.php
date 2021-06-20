@@ -14,5 +14,11 @@ class Merk extends Model
         'nama_merk'
     ];
 
+    public function motor(){
+        return $this->hasMany(motor::class);
+      }
+      public function type(){
+        return $this->hasMany(Type::class);
+      }
     
 }

@@ -11,4 +11,8 @@ class Bank extends Model
     protected $fillable = [
         'nama_bank'
     ];
+
+    public function penjualan(){
+        return $this->hasMany(Penjualan::class, 'id');
+      }
 }

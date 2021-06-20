@@ -14,7 +14,6 @@ class Pembelian extends Model
     ];
 
     public function motor(){
-        //setiap profil memiliki satu mahasiswa
         return $this->hasMany(motor::class, 'id');
       }
 

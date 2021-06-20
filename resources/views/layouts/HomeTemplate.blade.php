@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tailwind Starter Template - Nordic Shop: Tailwind Toolbox</title>
+    <title>Selamat Datang </title>
     <meta name="description" content="Free open source Tailwind CSS Store template">
     <meta name="keywords"
         content="tailwind,tailwindcss,tailwind css,css,starter template,free template,store template, shop layout, minimal, monochrome, minimalistic, theme, nordic">
@@ -91,8 +91,8 @@
                     <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
                         <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4 "
                                 href="#">Produk Kami </a></li>
-                        <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
-                                href="">Tentang Kami</a></li>
+                        <!-- <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                                href="">Tentang Kami</a></li> -->
                     </ul>
                 </nav>
             </div>
@@ -168,7 +168,7 @@
                     <div class="container mx-auto">
                         <div
                             class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
-                            <p class="text-gray-800 text-3xl my-4">Selamat datang silahkan melihat produk kami</p>
+                            <!-- <p class="text-gray-800 text-3xl my-4">Selamat datang silahkan melihat produk kami</p> -->
                             <!-- <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
                                 href="">view product</a> -->
                         </div>
@@ -303,10 +303,32 @@ Alternatively if you want to just have a single hero
             <div class="w-full mx-auto flex flex-wrap">
                 <div class="flex w-full lg:w-1/2 ">
                     <div class="px-3 md:px-0">
-                        <h3 class="font-bold text-gray-900">Contact us</h3>
+                        <h3 class="font-bold text-gray-900">Hubungi Kami</h3>
                         <ul>
                             <li>
-                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                <a href="https://api.whatsapp.com/send?phone=6283114975105"
+                                    class="flex items-center text-black opacity-75 hover:opacity-100 py-4 pl-6 nav-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                    <h1 class="text-base mx-1">Whatsapp</h1>
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://goo.gl/maps/TjjApTScx9qbxMt87"
+                                    class="flex items-center text-black opacity-75 hover:opacity-100 py-4 pl-6 nav-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                                    </svg>
+                                    <h1 class="text-base mx-1">Kunjungi Kami </h1>
+
+                                </a>
                             </li>
                         </ul>
                     </div>
